@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -110,7 +112,7 @@
                       <h4 class="text-uppercase font-weight-sbold wow fadeIn">Formulario de contacto</h4><span class="icon mdi icon-sm linearicons-pencil3"></span>
                     </div>
                     <!-- RD Mailform-->
-                    <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" action="https://formsubmit.co/marvincloser@gmail.com" method="POST">
                       <div class="form-wrap form-wrap-icon wow fadeIn" data-wow-delay=".05s">
                         <label class="form-label form-label-outside" for="contact-1-name">Nombre</label>
                         <input class="form-input" id="contact-1-name" type="text" name="name" data-constraints="@Required">
@@ -127,8 +129,10 @@
                         <div class="icon form-icon mdi mdi-email-outline"></div>
                       </div>
                       <div class="form-wrap wow fadeIn" data-wow-delay=".2s">
-                        <button class="button button-lg button-icon button-2 button-primary" type="submit">Enviar</button>
+                        <button class="button button-lg button-icon button-2 button-primary" value="Enviar" type="submit">Enviar</button>
                       </div>
+
+
                     </form>
                   </div>
                 </div>
