@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Home</title>
+    <title>Caring & Loving Foundation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800,900%7CBaloo">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
@@ -110,25 +112,27 @@
                       <h4 class="text-uppercase font-weight-sbold wow fadeIn">Formulario de contacto</h4><span class="icon mdi icon-sm linearicons-pencil3"></span>
                     </div>
                     <!-- RD Mailform-->
-                    <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" action="https://formsubmit.co/da5df6d186c73dafd6b86a5f91350e2d" method="POST">
                       <div class="form-wrap form-wrap-icon wow fadeIn" data-wow-delay=".05s">
                         <label class="form-label form-label-outside" for="contact-1-name">Nombre</label>
                         <input class="form-input" id="contact-1-name" type="text" name="name" data-constraints="@Required">
                         <div class="icon form-icon mdi mdi-account-outline"></div>
-                      </div>
-                      <div class="form-wrap form-wrap-icon wow fadeIn" data-wow-delay=".1s">
-                        <label class="form-label form-label-outside" for="contact-1-phone">Teléfono</label>
-                        <input class="form-input" id="contact-1-phone" type="text" name="phone" data-constraints="@PhoneNumber">
-                        <div class="icon form-icon mdi mdi-phone"></div>
                       </div>
                       <div class="form-wrap form-wrap-icon wow fadeIn" data-wow-delay=".15s">
                         <label class="form-label form-label-outside" for="contact-1-email">E-mail</label>
                         <input class="form-input" id="contact-1-email" type="email" name="email" data-constraints="@Email @Required">
                         <div class="icon form-icon mdi mdi-email-outline"></div>
                       </div>
-                      <div class="form-wrap wow fadeIn" data-wow-delay=".2s">
-                        <button class="button button-lg button-icon button-2 button-primary" type="submit">Enviar</button>
+                      <div class="form-wrap form-wrap-icon wow fadeIn" data-wow-delay=".1s">
+                        <label class="form-label form-label-outside" for="contact-1-message">Comentario</label>
+                        <input class="form-input" id="contact-1-message" type="text" name="message" data-constraints="@Required">
+                        <div class="icon form-icon mdi mdi-message"></div>
                       </div>
+                      <div class="form-wrap wow fadeIn" data-wow-delay=".2s">
+                        <button class="button button-lg button-icon button-2 button-primary" value="Enviar" type="submit">Enviar</button>
+                      </div>
+
+
                     </form>
                   </div>
                 </div>
@@ -159,7 +163,7 @@
                                   <h2 class="name">Joaquín</h2>
                                   <p class="description">Fue un día maravilloso y de emociones, visitar al Dr. Milton Warner, una eminencia un gran ser humano, él fue quien operó a Juaquin.</p>
       
-                                  <button onclick="location.href='info.html'" class="button">Ver más</button>
+                                  <button onclick="location.href='infoFour.html'" class="button">Ver más</button>
                               </div>
                           </div>
                           <div class="card swiper-slide">
@@ -175,7 +179,7 @@
                                   <h2 class="name">Día de Reyes y de amor.</h2>
                                   <p class="description">Día de reyes, día de amor y de dar a los pequeños niños que con ilusión esperan un juguete en el día de los reyes magos.</p>
       
-                                  <button onclick="location.href='info.html'" class="button">Ver más</button>
+                                  <button onclick="location.href='infoThree.html'" class="button">Ver más</button>
                               </div>
                           </div>
                           <div class="card swiper-slide">
@@ -191,7 +195,7 @@
                                   <h2 class="name">Margarita Guerra</h2>
                                   <p class="description">Margarita, una niña de 13 años con una malformación congénita viajará de Perú a Nueva York para operarse, ahora se inicia un proceso.</p>
       
-                                  <button onclick="location.href='info.html'" class="button">Ver más</button>
+                                  <button onclick="location.href='infoOne.html'" class="button">Ver más</button>
                               </div>
                           </div>
                           <div class="card swiper-slide">
@@ -207,7 +211,7 @@
                                   <h2 class="name">Entrega de comidas.</h2>
                                   <p class="description">La fundación Caring & Loving Foundation, realizó la entrega de comidas orgánicas a las familias de escasos recursos.</p>
       
-                                  <button onclick="location.href='info.html'" class="button">Ver más</button>
+                                  <button onclick="location.href='infoTwo.html'" class="button">Ver más</button>
                               </div>
                           </div>
                           <div class="card swiper-slide">
@@ -223,7 +227,7 @@
                                   <h2 class="name">Entrega comestibles.</h2>
                                   <p class="description">El trabajo de los jornaleros es muy importante para la comunidad y es por eso de Caring And Loving Foundation quiso retribuirles un poco.</p>
       
-                                  <button onclick="location.href='info.html'" class="button">Ver más</button>
+                                  <button onclick="location.href='infoSix.html'" class="button">Ver más</button>
                               </div>
                           </div>
                           <div class="card swiper-slide">
@@ -239,7 +243,7 @@
                                   <h2 class="name">Port Chester,Nueva York.</h2>
                                   <p class="description">En vísperas de navidad Caring & Loving Foundation, una organización sin fines de lucro realizó la entrega de tabletas a niños.</p>
 
-                                  <button onclick="location.href='info.html'" class="button">Ver más</button>
+                                  <button onclick="location.href='infoFive.html'" class="button">Ver más</button>
                               </div>
                           </div>
                       </div>
